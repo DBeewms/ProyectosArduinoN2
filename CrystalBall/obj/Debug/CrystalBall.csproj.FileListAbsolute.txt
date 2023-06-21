@@ -1,0 +1,10 @@
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\bin\Debug\CrystalBall.exe.config
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\bin\Debug\CrystalBall.exe
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\bin\Debug\CrystalBall.pdb
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.Form1.resources
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.exe
+C:\Users\Lenovo\source\repos\CrystalBall\CrystalBall\obj\Debug\CrystalBall.pdb
