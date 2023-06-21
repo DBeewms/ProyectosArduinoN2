@@ -14,6 +14,7 @@ namespace CrystalBall
     {
         bool active = false;
         string texto = "0";
+        string _puerto = "COM10";
 
         private void Start()
         {
@@ -24,7 +25,7 @@ namespace CrystalBall
                     serialPort1.Open();
                     active = true;
                     timer1.Enabled = true;
-                    timer1.Interval = 50;
+                    timer1.Interval = 2;
                     timer1.Start();
                 }
                 else
@@ -32,6 +33,7 @@ namespace CrystalBall
                     serialPort1.Close();
                     active = false;
                     timer1.Enabled = false;
+                    timer1.Stop();
                 }
             }
             catch (Exception ex)
@@ -47,7 +49,8 @@ namespace CrystalBall
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            serialPort1.PortName = "COM6";
+            serialPort1.PortName = _puerto; 
+            Start();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -65,17 +68,23 @@ namespace CrystalBall
             try
             {
                 string[] datos = serialPort1.ReadLine().Split('-');
+               // int tam = datos.Length - 2;
                 texto = datos[0];
+               // label1.Text = tam.ToString();
             }
-            catch (Exception ex) { }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             try
             {
-                lblAnswer.Text = texto;
                 Evaluate();
+                //lblAnswer.Text = texto;
+
+                
             }
             catch (Exception ex) { }
         }
@@ -83,28 +92,29 @@ namespace CrystalBall
         private void Evaluate()
         {
             int op = int.Parse(texto);
+           // label1.Text = op.ToString();
             switch (op)
             {
                 case 0:
                     lblAnswer.Text = "Si";
                 break;
                 case 1:
-                    lblAnswer.Text = "Es probable";
+                    lblAnswer.Text = "Muy probable";
                 break;
                 case 2:
                     lblAnswer.Text = "Ciertamente";
                 break;
                 case 3:
-                    lblAnswer.Text = "Buenas perspectivas";
+                    lblAnswer.Text = "Parece bien";
                 break;
                 case 4:
                     lblAnswer.Text = "No es seguro";
                 break;
                 case 5:
-                    lblAnswer.Text = "Pregunta de nuevo";
+                    lblAnswer.Text = "Intenta de nuevo";
                 break;
                 case 6:
-                    lblAnswer.Text = "Ni idea";
+                    lblAnswer.Text = "Es incierto";
                 break;
                 case 7:
                     lblAnswer.Text = "No";
@@ -112,6 +122,11 @@ namespace CrystalBall
 
             }
 
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
