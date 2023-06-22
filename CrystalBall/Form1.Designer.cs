@@ -41,15 +41,10 @@
             this.lblAnswer = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnStart = new System.Windows.Forms.ToolStripButton();
-            this.btnStop = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.TxtPuerto = new System.Windows.Forms.ToolStripTextBox();
-            this.btnPuerto = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.LblPuerto = new System.Windows.Forms.ToolStripLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPuerto = new System.Windows.Forms.TextBox();
+            this.btnPuerto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,11 +52,12 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.toolStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -100,7 +96,6 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.toolStrip1);
             this.panel3.Controls.Add(this.lblMsn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(200, 0);
@@ -117,7 +112,7 @@
             this.lblMsn.Name = "lblMsn";
             this.lblMsn.Size = new System.Drawing.Size(637, 166);
             this.lblMsn.TabIndex = 3;
-            this.lblMsn.Text = "Bola de cristal";
+            this.lblMsn.Text = "Esfera de cristal";
             this.lblMsn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
@@ -162,78 +157,44 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // toolStrip1
+            // groupBox1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnStart,
-            this.btnStop,
-            this.toolStripSeparator1,
-            this.toolStripLabel1,
-            this.TxtPuerto,
-            this.btnPuerto,
-            this.toolStripSeparator2,
-            this.LblPuerto});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(637, 33);
-            this.toolStrip1.TabIndex = 4;
-            this.toolStrip1.Text = "toolStrip1";
+            this.groupBox1.Controls.Add(this.btnPuerto);
+            this.groupBox1.Controls.Add(this.txtPuerto);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupBox1.Location = new System.Drawing.Point(0, 410);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 227);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Configuración";
             // 
-            // btnStart
+            // label1
             // 
-            this.btnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnStart.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(34, 28);
-            this.btnStart.Text = "Iniciar";
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Puerto:";
             // 
-            // btnStop
+            // txtPuerto
             // 
-            this.btnStop.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnStop.Enabled = false;
-            this.btnStop.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(34, 28);
-            this.btnStop.Text = "Detener";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 33);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(68, 28);
-            this.toolStripLabel1.Text = "Puerto:";
-            // 
-            // TxtPuerto
-            // 
-            this.TxtPuerto.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TxtPuerto.Name = "TxtPuerto";
-            this.TxtPuerto.Size = new System.Drawing.Size(100, 33);
-            this.TxtPuerto.Text = "COM1";
+            this.txtPuerto.Location = new System.Drawing.Point(12, 84);
+            this.txtPuerto.Name = "txtPuerto";
+            this.txtPuerto.Size = new System.Drawing.Size(153, 26);
+            this.txtPuerto.TabIndex = 1;
             // 
             // btnPuerto
             // 
-            this.btnPuerto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnPuerto.Image = ((System.Drawing.Image)(resources.GetObject("btnPuerto.Image")));
-            this.btnPuerto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPuerto.Location = new System.Drawing.Point(13, 128);
             this.btnPuerto.Name = "btnPuerto";
-            this.btnPuerto.Size = new System.Drawing.Size(34, 28);
-            this.btnPuerto.Text = "toolStripButton1";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 33);
-            // 
-            // LblPuerto
-            // 
-            this.LblPuerto.Name = "LblPuerto";
-            this.LblPuerto.Size = new System.Drawing.Size(0, 28);
+            this.btnPuerto.Size = new System.Drawing.Size(152, 42);
+            this.btnPuerto.TabIndex = 2;
+            this.btnPuerto.Text = "Cambiar";
+            this.btnPuerto.UseVisualStyleBackColor = true;
+            this.btnPuerto.Click += new System.EventHandler(this.btnPuerto_Click);
             // 
             // Form1
             // 
@@ -254,11 +215,10 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -276,15 +236,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer timer1;
         public System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnStart;
-        private System.Windows.Forms.ToolStripButton btnStop;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripTextBox TxtPuerto;
-        private System.Windows.Forms.ToolStripButton btnPuerto;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripLabel LblPuerto;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtPuerto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPuerto;
     }
 }
 

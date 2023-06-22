@@ -21,7 +21,9 @@
 
 // include the library code:
 #include <LiquidCrystal.h>
-#include <stdio.h>
+#include <string.h>
+
+String texto="";
 
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(12, 11, 2, 3, 4, 5);
@@ -52,7 +54,7 @@ void setup() {
   // line 1 is the second row, since counting begins with 0
   lcd.setCursor(0, 1);
   // print to the second line
-  lcd.print("Bola de cristal!");
+  lcd.print("Esfera ISI!");
 }
 
 void loop() {
@@ -71,7 +73,7 @@ void loop() {
       // set the cursor to column 0, line 0
       lcd.setCursor(0, 0);
       // print some text
-      lcd.print("La bola dice:");
+      lcd.print("La esfera dice:");
       // move the cursor to the second line
       lcd.setCursor(0, 1);
 
@@ -80,38 +82,46 @@ void loop() {
       switch (reply) {
         case 0:
           lcd.print("Si");
-          op = 0;
+          //op = 0;
+          texto = "Si";
           break;
         case 1:
           lcd.print("Muy probable");
-          op = 1;
+          //op = 1;
+          texto= "Muy probable";
           break;
         case 2:
           lcd.print("Ciertamente");
-          op = 2;
+          texto= "Ciertamente";
+          //op = 2;
           break;
         case 3:
           lcd.print("Parece bien");
-          op = 3;
+          texto= "Parece bien";
+          //op = 3;
           break;
         case 4:
           lcd.print("No es seguro");
-          op = 4;
+          texto= "No es seguro";
+          //op = 4;
           break;
         case 5:
           lcd.print("Intenta de nuevo");
-          op = 5;
+          texto= "Intenta de nuevo";
+          //op = 5;
           break;
         case 6:
           lcd.print("Es incierto");
-          op = 6;
+          texto= "Es incierto";
+          //op = 6;
           break;
         case 7:
           lcd.print("No");
-          op = 7;
+          texto= "No";
+          //op = 7;
           break;
       }
-      Serial.println(op);
+      Serial.print(texto);
       Serial.println("-");
     }
   }
