@@ -149,67 +149,67 @@ namespace CrystalBall
                 switch (question)
                 {
                     case 1:
-                        lblQuestion.Text = "¿Ingresaré a la UCA?";
+                        lblQuestion.Text = "¿Serás un creador famoso de videojuegos?";
                         break;
                     case 2:
-                        lblQuestion.Text = "¿Aprenderé a programar?";
+                        lblQuestion.Text = "¿Aprenderás a tocar un instrumento musical?";
                         break;
                     case 3:
-                        lblQuestion.Text = "¿Aprenderé acerca de hardware?";
+                        lblQuestion.Text = "¿Tendrás buena suerte en los próximos 7 años?";
                         break;
                     case 4:
-                        lblQuestion.Text = "¿Mi novi@ me quiere?";
+                        lblQuestion.Text = "¿Encontrarás a tu pareja ideal en la universidad?";
                         break;
                     case 5:
-                        lblQuestion.Text = "¿Tendré un buen trabajo?";
+                        lblQuestion.Text = "¿Serás súper popular en la UCA?";
                         break;
                     case 6:
-                        lblQuestion.Text = "¿Seré un buen estudiante?";
+                        lblQuestion.Text = "¿Tu novi@ te quiere?";
                         break;
                     case 7:
-                        lblQuestion.Text = "¿Aprobaré mis materias?";
+                        lblQuestion.Text = "¿Serás un maestro del Arduino?";
                         break;
                     case 8:
-                        lblQuestion.Text = "¿Aprobaré la prueba de aptitud?";
+                        lblQuestion.Text = "¿Viajarás por el mundo en el 2024?";
                         break;
                     case 9:
-                        lblQuestion.Text = "¿Tendré una buena computadora?";
+                        lblQuestion.Text = "¿Serás un maestro de la Inteligencia Artificial?";
                         break;
                     case 10:
-                        lblQuestion.Text = "¿Tendré tiempo para ir al gym?";
+                        lblQuestion.Text = "¿Tendrás una computadora nueva en navidad?";
                         break;
                     case 11:
-                        lblQuestion.Text = "¿Seré popular en la UCA?";
+                        lblQuestion.Text = "¿Trabajarás en una empresa importante?";
                         break;
                     case 12:
-                        lblQuestion.Text = "¿Seré lo mejor para el mundo?";
+                        lblQuestion.Text = "¿Aprenderás un nuevo idioma este año?";
                         break;
                     case 13:
-                        lblQuestion.Text = "¿Aprobare Cálculo 1 en el primer semestre?";
+                        lblQuestion.Text = "¿Aprenderé a volar con realidad virtual?";
                         break;
                     case 14:
-                        lblQuestion.Text = "¿Aprenderé Arduino?";
+                        lblQuestion.Text = "¿Te gusta alguien de tu grupo de clases?";
                         break;
                     case 15:
-                        lblQuestion.Text = "¿Aprenderé lenguaje C/C + +?";
+                        lblQuestion.Text = "¿Venderías a tu mascota por un millón?";
                         break;
                     case 16:
-                        lblQuestion.Text = "¿Aprenderé a armar una computadora?";
+                        lblQuestion.Text = "¿Te gustaría vivir en otro planeta?";
                         break;
                     case 17:
-                        lblQuestion.Text = "¿Crearé juegos?";
+                        lblQuestion.Text = "¿Aceptarías convertirte en un robot?";
                         break;
                     case 18:
-                        lblQuestion.Text = "¿Crearé aplicaciones web?";
+                        lblQuestion.Text = "¿Te gustaría conversar con un extraterrestre?";
                         break;
                     case 19:
-                        lblQuestion.Text = "¿Crearé aplicaciones móviles?";
+                        lblQuestion.Text = "¿Vivirías en la selva, alejado de la civilización?";
                         break;
                     case 20:
-                        lblQuestion.Text = "¿Tendré buena suerte en este año?";
+                        lblQuestion.Text = "¿Serías capaz de pasar tres días sin dormir?";
                         break;
                     case 21:
-                        lblQuestion.Text = "¿Tendré novi@?";
+                        lblQuestion.Text = "¿Seré parte del equipo de fútbol de la UCA?";
                         break;
                     default:
                         lblQuestion.Text = "Hacer pregunta...";

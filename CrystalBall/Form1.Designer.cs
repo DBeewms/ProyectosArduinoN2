@@ -172,7 +172,7 @@
             // lblQuestion
             // 
             this.lblQuestion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblQuestion.Font = new System.Drawing.Font("MV Boli", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion.Font = new System.Drawing.Font("MV Boli", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.DarkOrchid;
             this.lblQuestion.Location = new System.Drawing.Point(0, 142);
             this.lblQuestion.Name = "lblQuestion";
