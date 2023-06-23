@@ -73,6 +73,16 @@ namespace CrystalBall.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bolaOcho {
+            get {
+                object obj = ResourceManager.GetObject("bolaOcho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jesuitas {
             get {
                 object obj = ResourceManager.GetObject("jesuitas", resourceCulture);

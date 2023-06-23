@@ -82,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\bolacristal.gif" />
+    <Content Include="Imagenes\bolaOcho.gif" />
     <Content Include="Imagenes\jesuitas.png" />
     <Content Include="Imagenes\Logo UCA.ico" />
     <Content Include="Imagenes\UCA.png" />

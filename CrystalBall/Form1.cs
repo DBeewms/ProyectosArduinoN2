@@ -14,7 +14,7 @@ namespace CrystalBall
     {
         bool active = false;
         string texto = "La esfera dice:";
-        string _puerto = "COM10";
+        string _puerto = "COM8";
 
         private void Start()
         {
@@ -122,6 +122,102 @@ namespace CrystalBall
         private void btnPuerto_Click(object sender, EventArgs e)
         {
             _puerto = txtPuerto.Text.ToUpper();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAnswer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGenerar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int min = 1, max = 21;
+                Random rnd = new Random();
+                int question = rnd.Next(min,max+1);
+                switch (question)
+                {
+                    case 1:
+                        lblQuestion.Text = "¿Ingresaré a la UCA?";
+                        break;
+                    case 2:
+                        lblQuestion.Text = "¿Aprenderé a programar?";
+                        break;
+                    case 3:
+                        lblQuestion.Text = "¿Aprenderé acerca de hardware?";
+                        break;
+                    case 4:
+                        lblQuestion.Text = "¿Mi novi@ me quiere?";
+                        break;
+                    case 5:
+                        lblQuestion.Text = "¿Tendré un buen trabajo?";
+                        break;
+                    case 6:
+                        lblQuestion.Text = "¿Seré un buen estudiante?";
+                        break;
+                    case 7:
+                        lblQuestion.Text = "¿Aprobaré mis materias?";
+                        break;
+                    case 8:
+                        lblQuestion.Text = "¿Aprobaré la prueba de aptitud?";
+                        break;
+                    case 9:
+                        lblQuestion.Text = "¿Tendré una buena computadora?";
+                        break;
+                    case 10:
+                        lblQuestion.Text = "¿Tendré tiempo para ir al gym?";
+                        break;
+                    case 11:
+                        lblQuestion.Text = "¿Seré popular en la UCA?";
+                        break;
+                    case 12:
+                        lblQuestion.Text = "¿Seré lo mejor para el mundo?";
+                        break;
+                    case 13:
+                        lblQuestion.Text = "¿Aprobare Cálculo 1 en el primer semestre?";
+                        break;
+                    case 14:
+                        lblQuestion.Text = "¿Aprenderé Arduino?";
+                        break;
+                    case 15:
+                        lblQuestion.Text = "¿Aprenderé lenguaje C/C + +?";
+                        break;
+                    case 16:
+                        lblQuestion.Text = "¿Aprenderé a armar una computadora?";
+                        break;
+                    case 17:
+                        lblQuestion.Text = "¿Crearé juegos?";
+                        break;
+                    case 18:
+                        lblQuestion.Text = "¿Crearé aplicaciones web?";
+                        break;
+                    case 19:
+                        lblQuestion.Text = "¿Crearé aplicaciones móviles?";
+                        break;
+                    case 20:
+                        lblQuestion.Text = "¿Tendré buena suerte en este año?";
+                        break;
+                    case 21:
+                        lblQuestion.Text = "¿Tendré novi@?";
+                        break;
+                    default:
+                        lblQuestion.Text = "Hacer pregunta...";
+                        break;
+                }
+            }
+            catch(Exception ex) { }
+            
         }
     }
 }
