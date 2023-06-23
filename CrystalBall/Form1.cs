@@ -8,6 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Autores:
+ * Diego Mora
+ * Carlos Talavera
+ * Tutor:
+ * José Durán
+ * 
+ */
+
 namespace CrystalBall
 {
     public partial class Form1 : Form
